@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schoology</title>
+
+    <style>
+        /* Light mode (default) */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #000000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: #ddd;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: inherit;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Dark mode */
+        body.dark {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        body.dark header,
+        body.dark footer {
+            background: #1e1e1e;
+        }
+
+        body.dark nav {
+            background: #2a2a2a;
+        }
+
+        /* Toggle button */
+        .toggle-btn {
+            margin-top: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Moaz's Game Site</h1>
+        <p>This is my homepage for a game site for schcool</p>
+        <button class="toggle-btn" onclick="toggleDarkMode()">Light/Dark</button>
+    </header>
+    
+    <button onclick="window.location.href='https://app.schoology.com/'">
+    Panic
+    </button>
+    
+    <a href="escape road 2/">
+    <button>Escape Road 2</button>
+</a>
+
+    <a href="eagler/">
+    <button>Eaglercraft</button>
+</a>
+
+    <main>
+        <h2>About This Site</h2>
+        <p>
+            a game site
+        </p>
+    </main>
+
+    <footer>
+        <p>hi</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+
+</body>
+</html>
+
